@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo de The Elder Scrolls</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <div class="container-fluid">
+                    <a class="navbar-brand fade-in-fwd" href="#"><img class="logo" src="./images/Logo_Skyrim.png" alt="Logo de Skyrim"></a>
+                    <button class="btn-nav navbar-toggler fade-in-fwd" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse slide-in-fwd-right" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/historia.html">Historia</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./pages/cosmology.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sistema Solar</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="./pages/cosmology.html#SistemaSolar">Nirn</a></li>
+                                    <li><a class="dropdown-item" href="./pages/theVoid.html#finalMalo">El vacío</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/soundtracks.html">Soundtracks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="imagenFondo">
+            <section class="sectionIndex container p-0 fade-in-fwd">
+                <h1>Seas bienvenido para culturizarte en el universo de la gran saga <br>The Elder Scrolls</h1>
+                <p>The Elder Scrolls es una serie de videojuegos de rol característica por su gran libertad en el planteamiento y gran extensión territorial. En esta serie el jugador participa en una historia épica en el continente de Tamriel tomando parte fundamental en los acontecimientos, normalmente de carácter apocalíptico, de cada era. Cada episodio simboliza un Elder Scroll, es decir, una especie de pergamino de extensión desconocida donde quedan escritas las hazañas del jugador. Estos existen desde el primer Imperio creado. La tradición de este juego dicta que el héroe al cual da vida el jugador empiece como un simple prisionero, resultando liberado de una u otra forma en los primeros compases del juego y recibe, a partir de ahí, total libertad para seguir la historia principal o explorar el mundo y realizar multitud de misiones y tareas secundarias. Esta libertad de acción para el jugador ha dado un gran renombre a esta serie. Los videojuegos de la serie The Elder Scrolls se subtitulan normalmente según el lugar en el que se desarrollan, por ejemplo The Elder Scrolls III: Morrowind. La saga The Elder Scrolls no había contado con traducción de voces al español hasta The Elder Scrolls V: Skyrim.</p>
+            </section>
+            <div class="contact_form fade-in-fwd" id="contacto">
+                <form method="get">
+                    <div class="mensaje">
+                        <h2>Envía un mensaje</h2>
+                    </div>
+                    <p>
+                        <label>Nombre y Apellido</label>
+                        <input type="text" name="NombreyApellido" placeholder="Ingrese su nombre...">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="Email" placeholder="Email" required>
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="Asunto" placeholder="Asunto">
+                    </p>
+                    <p><label>País</label>
+                        <select>
+                            <option value="">-- Seleccione su país --</option>
+                            <option>Argentina</option>
+                            <option>Bolivia</option>
+                            <option>Brasil</option>
+                            <option>Chile</option>
+                            <option>Colombia</option>
+                            <option>España</option>
+                            <option>Estados Unidos</option>
+                            <option>India</option>
+                            <option>Perú</option>
+                        </select></p>
+                    <p>
+                        <textarea placeholder="Envíanos un mensaje..."></textarea>
+                    </p>
+                    <p>
+                        <button class="btnIndex">Enviar</button>
+                        <button class="btnIndex" type="reset">Borrar todo</button>
+                    </p>
+                </form>
+            </div>
+        </main>
+
+        <footer class="pie">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black slide-in-fwd-right">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://elderscrolls.bethesda.net/es" target="_blank">Pagina Oficial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contacto">Contacto</a>
+                    </li>
+                    <li><p>© Todos los derechos reservados</p></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>

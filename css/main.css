@@ -1,0 +1,708 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Inicio*/
+header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.imagenFondo {
+    background-image: url("../images/folk-pattern-black.png");
+    background-size:  auto auto;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagenFondo h1 {
+    max-width: 800px;
+    padding: 5px;
+    margin: 0 0 0px;
+    text-align: center;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: rgb(8, 55, 55);
+    color:  rgb(255, 255, 255);
+}
+
+.imagenFondo p {
+    text-align: justify;
+    padding: 5px 10px 5px;
+    margin: 5px;
+}
+
+.sectionIndex {
+    width: 800px;
+    margin-top: 45px;
+    border-radius: 10px;  
+    background-color: rgb(124, 195, 194);
+    color:#001411;
+}
+
+.mensaje  {
+    text-align: center;
+}
+
+.contact_form {  
+    width: 460px;
+    margin: 50px;
+    border-radius: 10px;  
+    padding: 20px 10px;
+    background-color: rgb(140, 194, 194); 
+    box-shadow: 10px 10px 20px 20px #000000;
+}
+
+input {
+    background-color: rgb(230, 255, 255);
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #00211c;
+    margin: 10px 0 20px;
+    padding-left: 10px;
+}
+  
+textarea {
+    background-color: rgb(230, 255, 255);
+    width: 100%; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    margin: 10px 0 10px;
+    padding-left: 10px;
+    padding-top: 15px; 
+    border-color: #00211c;
+}
+  
+label {
+    display: flex;
+    justify-items: center;
+}
+  
+select {
+    background-color: rgb(230, 255, 255);;
+    border-radius: 5px;
+    border-style: solid;
+    margin: 10px 0 10px;
+    padding: 5px 10px 5px;
+    border-color: #00211c;
+}
+
+.btnIndex {
+    width: 100%; 
+    height: 45px; 
+    padding: 0 5px 0; 
+    margin: 10px 0 5px; 
+    text-transform: uppercase;
+    background-color: rgb(0, 100, 94); 
+    border-color: #003b33;
+    border-style: solid; 
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.btnIndex:hover {
+    background: rgb(0, 54, 54);
+    border-color: #00211c;
+}
+
+/*Historia*/
+.sectionHistoria {
+    max-width: 80%;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgba(8, 55, 55, 0.931);
+    color:rgb(230, 255, 255);
+}
+
+.tituloHistoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.btn-carousel:hover {
+    background-color: rgba(0, 0, 0, 0.412);
+}
+
+.listaHistoria {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;  
+}
+
+.listaClara {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(124, 195, 194);
+    color:rgb(2, 26, 26);
+
+}
+
+.listaOscura {
+    padding: 10px;
+    border-radius: 5px;
+    background-color:rgb(4, 47, 47);
+}
+
+.fondoHistoria {
+    background-image: url("../images/Skyrim_wallpaper.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Sistema Solar*/
+.fondoCosmology {
+    background-image: url("../images/Fondo_grande_3.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionCosmology {
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 15px 15px 10px;
+    margin: 5px 15%;
+    color:white;
+    background-color: #001620ee;
+}
+
+.imagenesSolar {
+    max-width: 100%;
+    height: auto;
+}
+
+/*El Vacío*/
+.fondoVacio {
+    background-image: url("../images/The_void.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fondoVacio h1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*Galería*/
+.sectionGaleria {
+    width: 95%;
+    margin: 45px 5px 10px;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    background-color: rgb(0, 54, 54);
+}
+
+.mini_logo {
+    display: flex;
+    align-self: flex-start;
+}
+
+.sectionGaleria h2 {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+
+.mini_logo_2 {
+    display: flex;
+    align-self: flex-end;
+}
+
+.todasLasImagenes {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 5%
+}
+
+.scale {
+    transition: 1s;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+}
+
+.todasLasImagenes img {
+    width: 30%;
+}
+
+/*Soundtrack*/
+.tituloOST {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    padding: 15px 15px 0 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color:#001621;
+}
+
+.tituloJuego {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 15px 15px 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+    background-color:#001621;
+}
+
+.bajada {
+    margin: 5px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 15px 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color:#003552 ;
+    color:rgb(255, 255, 255);
+}
+
+.playlists {
+    width: 100%;
+    margin: 50px;
+    padding: 10px;
+    gap: 70px ;
+    display: flex;
+    justify-content: center;
+    color:white;
+    flex: 1;
+}
+
+.iframe-spotify {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 15px;
+}
+
+.iframe-youtube {
+    height: 25vh;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*Footer*/
+.pie {
+    width: 100%;
+    padding: 10px;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: black;
+}
+
+.pie a {
+    margin: 5px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+
+.pie p {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.pie a:hover {
+    background: white;
+    color: black;
+}
+
+/*Animaciones*/
+.fade-in-fwd {
+	-webkit-animation: fade-in-fwd 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+	        animation: fade-in-fwd 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+}
+
+@-webkit-keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+}
+
+@keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+}
+
+.slide-in-fwd-right {
+	-webkit-animation: slide-in-fwd-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	        animation: slide-in-fwd-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+
+@-webkit-keyframes slide-in-fwd-right {
+    0% {
+      -webkit-transform: translateZ(-1400px) translateX(1000px);
+              transform: translateZ(-1400px) translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slide-in-fwd-right {
+    0% {
+      -webkit-transform: translateZ(-1400px) translateX(1000px);
+              transform: translateZ(-1400px) translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+}
+
+.slide-in-fwd-left {
+	-webkit-animation: slide-in-fwd-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	        animation: slide-in-fwd-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+
+
+@-webkit-keyframes slide-in-fwd-left {
+    0% {
+      -webkit-transform: translateZ(-1400px) translateX(-1000px);
+              transform: translateZ(-1400px) translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slide-in-fwd-left {
+    0% {
+      -webkit-transform: translateZ(-1400px) translateX(-1000px);
+              transform: translateZ(-1400px) translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+}
+
+/*mediaQueries*/
+@media screen and (max-width: 576px) {  
+/*Index*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+  
+    .logo {
+        height: 100%;
+    }
+
+    .navbar-active {
+        display: block;
+    }
+
+    .btn-nav {
+        border-color:grey;
+    }
+
+    .btn-nav:hover {
+        background-color: black;
+        border-color: grey;
+    }
+
+    .sectionIndex {
+        max-width: 85%;
+    }
+
+    .sectionIndex h1 {
+        padding: 10px 5px;
+    }
+
+    .contact_form{  
+        max-width: 85%;
+        padding-right: 10px;
+        box-shadow: 10px 10px 15px 15px #000000;
+    }
+
+    .imagenFondo{
+        min-height: 100vh;
+    }
+    
+    .imagenFondo h1 {
+        max-width: 100%;
+    }
+
+    input {
+        max-width: 95%; 
+        height: 35px; 
+    }
+
+    textarea {
+        max-width: 95%; 
+    }
+
+    .pie {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .pie a {
+        padding: 5px 10px;
+    }
+
+/*Historia*/
+    .fondoHistoria {
+        background-image: url("../images/movil_Skyrim.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
+    .tituloHistoria p {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+/*Cosmology*/
+    .fondoCosmology {
+        background-image: url("../images/movil_Fondo_grande_3.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
+/*Soundtrack*/
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .wrapper {
+        grid-row: 2;
+    }
+
+    .iframe-youtube {
+        height: 35vh;
+    }
+
+/*The void*/
+    .fondoVacio {
+        background-image: url("../images/movil_The_void.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: grid;
+        place-items: center;
+    }
+
+/*Galería*/
+    .todasLasImagenes img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+/*Inicio*/
+    .sectionIndex {
+        margin-bottom: 45px;
+        border-radius: 20px;
+    }
+
+    .imagenFondo h1 {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .contact_form {  
+        width: 85%;
+        margin-top: 45px;
+        border-radius: 20px;  
+        padding: 20px 10px;
+    }
+
+    input {
+        width: 95%;
+        margin: 10px 0;
+    }
+      
+    select {
+        width: 100%;
+    }
+
+/*Historia*/
+    .fondoHistoria {
+        background-image: url("../images/tablet_Skyrim.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: grid;
+        place-items: center;
+    }
+
+    .sectionHistoria {
+        margin: 55px;
+        border-radius: 20px;
+    }
+
+    .listaClara, .listaOscura {
+        border-radius: 10px;
+    }
+
+/*Cosmology*/
+    .sectionCosmology {
+        border-radius: 20px;
+    }
+
+/*Soundtrack*/
+    .tituloOST {
+        margin-bottom: 0;
+        padding: 10px 10px 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .tituloJuego {
+        margin-top: 0;
+        padding: 0 10px 10px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .bajada {
+        border-radius: 20px
+    }
+
+    .iframe-full-width {
+        width: 100%;
+      }
+
+    .col-md-3 {
+        width: 100%;
+      }
+
+    .iframe-spotify {
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 0;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 95%;
+    }
+    
+    .iframe-youtube {
+        height: 50vh;
+    }
+
+/*The void*/
+    .fondoVacio {
+        background-image: url("../images/movil_The_void.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: grid;
+        place-items: center;
+    }
+
+    .fondoVacio h1{
+        margin: 10px;
+        padding: 0;
+    }
+
+/*Galeria*/
+    
+}
