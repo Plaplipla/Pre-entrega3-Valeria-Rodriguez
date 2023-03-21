@@ -1,0 +1,42 @@
+.pie {
+	width: 100%;
+	padding: 10px;
+	position: sticky;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	background-color: $color_2;
+
+	@include mobile {
+		padding: 10px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+		align-content: center;
+		text-align: center;
+	}
+
+	a {
+		margin: 5px 10px;
+		padding: 10px;
+		border-radius: 5px;
+		color: $color_1;
+		text-decoration: none;
+		align-items: center;
+
+		&:hover {
+			background: $color_1;
+			color: $color_2;
+		}
+
+		@include mobile {
+			padding: 5px 10px;
+		}
+	}
+	
+	p {
+		margin: 5px;
+		padding: 10px;
+		color: $color_1;
+	}
+}

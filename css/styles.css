@@ -1,0 +1,669 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  gap: 20px;
+  grid-gap: 20px;
+}
+@media screen and (max-width: 576px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+.logo {
+  width: 100px;
+}
+@media screen and (max-width: 576px) {
+  .logo {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-active {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btn-nav {
+    border-color: grey;
+  }
+  .btn-nav:hover {
+    background-color: black;
+    border-color: grey;
+  }
+}
+
+.imagenFondo {
+  background-image: url("../images/folk-pattern-black.png");
+  background-size: auto auto;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 576px) {
+  .imagenFondo {
+    min-height: 100vh;
+  }
+}
+.imagenFondo h1 {
+  max-width: 800px;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  background-color: rgb(8, 55, 55);
+  color: rgb(230, 255, 255);
+}
+@media screen and (max-width: 576px) {
+  .imagenFondo h1 {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .imagenFondo h1 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+.imagenFondo p {
+  text-align: justify;
+  padding: 5px 10px 5px;
+  margin: 5px;
+}
+
+.sectionIndex {
+  width: 800px;
+  margin-top: 45px;
+  border-radius: 10px;
+  background-color: rgb(124, 195, 194);
+  color: #001411;
+}
+@media screen and (max-width: 576px) {
+  .sectionIndex h1 {
+    padding: 10px 5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sectionIndex {
+    max-width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionIndex {
+    margin-bottom: 45px;
+    border-radius: 20px;
+  }
+}
+
+.mensaje {
+  text-align: center;
+}
+
+.contact_form {
+  width: 460px;
+  margin: 50px;
+  border-radius: 10px;
+  padding: 20px 10px;
+  background-color: rgb(124, 195, 194);
+  box-shadow: 10px 10px 20px 20px #000000;
+}
+@media screen and (max-width: 576px) {
+  .contact_form {
+    max-width: 85%;
+    padding-right: 10px;
+    box-shadow: 10px 10px 15px 15px #000000;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact_form {
+    width: 85%;
+    margin-top: 45px;
+    border-radius: 20px;
+    padding: 20px 10px;
+  }
+}
+
+input {
+  background-color: rgb(230, 255, 255);
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00211c;
+  margin: 10px 0 20px;
+  padding-left: 10px;
+}
+@media screen and (max-width: 576px) {
+  input {
+    max-width: 95%;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  input {
+    width: 95%;
+    margin: 10px 0;
+  }
+}
+
+textarea {
+  background-color: rgb(230, 255, 255);
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 10px 0 10px;
+  padding-left: 10px;
+  padding-top: 15px;
+  border-color: #00211c;
+}
+@media screen and (max-width: 576px) {
+  textarea {
+    max-width: 95%;
+  }
+}
+
+label {
+  display: flex;
+  justify-items: center;
+}
+
+select {
+  background-color: rgb(230, 255, 255);
+  border-radius: 5px;
+  border-style: solid;
+  margin: 10px 0 10px;
+  padding: 5px 10px 5px;
+  border-color: #00211c;
+}
+@media screen and (max-width: 768px) {
+  select {
+    width: 100%;
+  }
+}
+
+.btnIndex {
+  width: 100%;
+  height: 45px;
+  padding: 0 5px 0;
+  margin: 10px 0 5px;
+  text-transform: uppercase;
+  background-color: rgb(0, 100, 94);
+  border-color: #003b33;
+  border-style: solid;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+.btnIndex:hover {
+  background: rgb(0, 54, 54);
+  border-color: #00211c;
+}
+
+.sectionCosmology {
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 15px 15px 10px;
+  margin: 5px 15%;
+  color: white;
+  background-color: #001621;
+}
+@media screen and (max-width: 576px) {
+  .sectionCosmology {
+    margin: 15px;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionCosmology {
+    border-radius: 20px;
+  }
+}
+
+.fondoVacio {
+  background-image: url("../images/The_void.png");
+}
+.fondoVacio h1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .fondoVacio h1 {
+    margin: 10px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .fondoVacio {
+    background-image: url("../images/movil_The_void.png");
+  }
+}
+@media screen and (max-width: 768px) {
+  .fondoVacio {
+    background-image: url("../images/movil_The_void.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+  }
+}
+
+.sectionHistoria {
+  max-width: 80%;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(8, 55, 55, 0.931);
+  color: rgb(230, 255, 255);
+}
+@media screen and (max-width: 576px) {
+  .sectionHistoria {
+    padding: 15px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionHistoria {
+    margin: 15px;
+    border-radius: 20px;
+  }
+}
+
+.tituloHistoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+@media screen and (max-width: 576px) {
+  .tituloHistoria {
+    padding-bottom: 5px;
+  }
+  .tituloHistoria p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.btn-carousel:hover {
+  background-color: rgba(0, 0, 0, 0.412);
+}
+
+.listaHistoria {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 576px) {
+  .listaHistoria {
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+  }
+}
+
+.listaClara {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(124, 195, 194);
+  color: rgb(2, 26, 26);
+}
+@media screen and (max-width: 768px) {
+  .listaClara {
+    border-radius: 10px;
+  }
+}
+
+.listaOscura {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(4, 47, 47);
+}
+@media screen and (max-width: 768px) {
+  .listaOscura {
+    border-radius: 10px;
+  }
+}
+
+.tituloOST {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  padding: 15px 15px 0 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #001621;
+}
+@media screen and (max-width: 768px) {
+  .tituloOST {
+    margin-bottom: 0;
+    padding: 10px 10px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+
+.tituloJuego {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 15px 15px 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #001621;
+}
+@media screen and (max-width: 768px) {
+  .tituloJuego {
+    margin-top: 0;
+    padding: 0 10px 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.bajada {
+  margin: 5px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 15px 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: #003552;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .bajada {
+    border-radius: 20px;
+  }
+}
+
+.playlists {
+  width: 100%;
+  margin: 50px;
+  padding: 10px;
+  gap: 70px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex: 1;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    grid-row: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-md-3 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .iframe-full-width {
+    width: 100%;
+  }
+}
+
+.iframe-spotify {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .iframe-spotify {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 0;
+  }
+}
+
+.iframe-youtube {
+  height: 25vh;
+}
+@media screen and (max-width: 576px) {
+  .iframe-youtube {
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .iframe-youtube {
+    height: 50vh;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  iframe {
+    width: 100%;
+    height: 95%;
+  }
+}
+
+.fondo {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .fondo {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+}
+
+.sectionGaleria {
+  width: 95%;
+  margin: 45px 5px 10px;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: white;
+  background-color: rgb(0, 54, 54);
+}
+.sectionGaleria h2 {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.mini_logo {
+  display: flex;
+  align-self: flex-start;
+}
+
+.mini_logo_2 {
+  display: flex;
+  align-self: flex-end;
+}
+
+.todasLasImagenes {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 5%;
+}
+.todasLasImagenes img {
+  width: 30%;
+}
+@media screen and (max-width: 576px) {
+  .todasLasImagenes img {
+    width: 100%;
+  }
+}
+
+.scale {
+  transition: 1s;
+}
+.scale:hover {
+  transform: scale(1.1);
+}
+
+.imagenesSolar {
+  max-width: 100%;
+  height: auto;
+}
+
+.imagenHistoria {
+  background-image: url("../images/Skyrim_wallpaper.jpg");
+  background-attachment: fixed;
+}
+@media screen and (max-width: 576px) {
+  .imagenHistoria {
+    background-image: url("../images/movil_Skyrim.png");
+  }
+}
+@media screen and (max-width: 768px) {
+  .imagenHistoria {
+    background-image: url("../images/tablet_Skyrim.png");
+  }
+}
+
+.imagenCosmology {
+  background-image: url("../images/Fondo_grande_3.png");
+}
+@media screen and (max-width: 576px) {
+  .imagenCosmology {
+    background-image: url("../images/movil_Fondo_grande_3.png");
+  }
+}
+
+.fade-in-fwd {
+  animation: fade-in-fwd 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+}
+@keyframes fade-in-fwd {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+.slide-in-fwd-right {
+  animation: slide-in-fwd-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+@keyframes slide-in-fwd-right {
+  0% {
+    transform: translateZ(-1400px) translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-fwd-left {
+  animation: slide-in-fwd-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+@keyframes slide-in-fwd-left {
+  0% {
+    transform: translateZ(-1400px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+.pie {
+  width: 100%;
+  padding: 10px;
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: black;
+}
+@media screen and (max-width: 576px) {
+  .pie {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+  }
+}
+.pie a {
+  margin: 5px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+}
+.pie a:hover {
+  background: white;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  .pie a {
+    padding: 5px 10px;
+  }
+}
+.pie p {
+  margin: 5px;
+  padding: 10px;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */

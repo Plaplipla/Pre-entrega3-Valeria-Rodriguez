@@ -1,0 +1,38 @@
+header {
+    background-color: $color_2;
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+
+    @include mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+.logo {
+    width: 100px;
+
+    @include mobile {
+        height: 100%;
+    }
+}
+
+.navbar-active {
+    @include mobile{
+		display: block;
+    }
+}
+
+.btn-nav {
+    @include mobile {
+        border-color: $border-color_3;
+        
+		&:hover {
+			background-color: $color_2;
+			border-color: $border-color_3;
+		}
+    }
+}

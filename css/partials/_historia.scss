@@ -1,0 +1,73 @@
+.sectionHistoria {
+	max-width: 80%;
+	margin: 50px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: $color_transparente_1;
+	color: $color-titulo;
+
+	@include mobile {
+		padding: 15px;
+		margin: 15px;
+	}
+
+	@include tablet {
+		margin: 15px;
+		border-radius: 20px;
+	}
+}
+
+.tituloHistoria {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 10px;
+
+	@include mobile {
+		padding-bottom: 5px;
+		
+		p {
+			margin-bottom: 0;
+			text-align: center;
+		}
+	}
+}
+
+.btn-carousel {
+	&:hover {
+		background-color: $color_transparente_2;
+	}
+}
+
+.listaHistoria {
+	margin: 15px;
+	padding: 15px;
+	border-radius: 10px;
+
+	@include mobile {
+		margin: 5px 5px 5px 5px;
+		padding: 5px;
+	}
+}
+
+.listaClara {
+	padding: 10px;
+	border-radius: 5px;
+	background-color: $color-fondo-claro;
+	color: $color_3;
+
+	@include tablet {
+		border-radius: 10px;
+	}
+}
+
+.listaOscura {
+	padding: 10px;
+	border-radius: 5px;
+	background-color: $color-fondo-oscuro;
+
+	@include tablet {
+		border-radius: 10px;
+	}
+}

@@ -15,6 +15,18 @@ header {
     width: 100px;
 }
 
+.fondo {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .imagenFondo {
     background-image: url("../images/folk-pattern-black.png");
     background-size:  auto auto;
@@ -29,7 +41,7 @@ header {
 .imagenFondo h1 {
     max-width: 800px;
     padding: 5px;
-    margin: 0 0 0px;
+    margin: 0;
     text-align: center;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
@@ -164,29 +176,14 @@ select {
     background-color:rgb(4, 47, 47);
 }
 
-.fondoHistoria {
+.imagenHistoria {
     background-image: url("../images/Skyrim_wallpaper.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 /*Sistema Solar*/
-.fondoCosmology {
+.imagenCosmology {
     background-image: url("../images/Fondo_grande_3.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .sectionCosmology {
@@ -206,14 +203,6 @@ select {
 /*El Vacío*/
 .fondoVacio {
     background-image: url("../images/The_void.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 .fondoVacio h1 {
@@ -462,136 +451,6 @@ iframe {
 }
 
 /*mediaQueries*/
-@media screen and (max-width: 576px) {  
-/*Index*/
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-    }
-  
-    .logo {
-        height: 100%;
-    }
-
-    .navbar-active {
-        display: block;
-    }
-
-    .btn-nav {
-        border-color:grey;
-    }
-
-    .btn-nav:hover {
-        background-color: black;
-        border-color: grey;
-    }
-
-    .sectionIndex {
-        max-width: 85%;
-    }
-
-    .sectionIndex h1 {
-        padding: 10px 5px;
-    }
-
-    .contact_form{  
-        max-width: 85%;
-        padding-right: 10px;
-        box-shadow: 10px 10px 15px 15px #000000;
-    }
-
-    .imagenFondo{
-        min-height: 100vh;
-    }
-    
-    .imagenFondo h1 {
-        max-width: 100%;
-    }
-
-    input {
-        max-width: 95%; 
-        height: 35px; 
-    }
-
-    textarea {
-        max-width: 95%; 
-    }
-
-    .pie {
-        padding: 10px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-        align-content: center;
-        text-align: center;
-    }
-
-    .pie a {
-        padding: 5px 10px;
-    }
-
-/*Historia*/
-    .fondoHistoria {
-        background-image: url("../images/movil_Skyrim.png");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-    }
-
-    .tituloHistoria p {
-        margin-bottom: 0;
-        text-align: center;
-    }
-
-/*Cosmology*/
-    .fondoCosmology {
-        background-image: url("../images/movil_Fondo_grande_3.png");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-    }
-
-/*Soundtrack*/
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr auto;
-    }
-
-    .wrapper {
-        grid-row: 2;
-    }
-
-    .iframe-youtube {
-        height: 35vh;
-    }
-
-/*The void*/
-    .fondoVacio {
-        background-image: url("../images/movil_The_void.png");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        display: grid;
-        place-items: center;
-    }
-
-/*Galería*/
-    .todasLasImagenes img {
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 768px) {
 /*Inicio*/
     .sectionIndex {
@@ -620,19 +479,13 @@ iframe {
         width: 100%;
     }
 
-/*Historia*/
-    .fondoHistoria {
+/*HistoriaTablet*/
+    .imagenHistoria {
         background-image: url("../images/tablet_Skyrim.png");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        display: grid;
-        place-items: center;
     }
 
     .sectionHistoria {
-        margin: 55px;
+        margin: 15px;
         border-radius: 20px;
     }
 
@@ -701,8 +554,144 @@ iframe {
     .fondoVacio h1{
         margin: 10px;
         padding: 0;
+    }    
+}
+
+@media screen and (max-width: 576px) {  
+/*Index*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .logo {
+        height: 100%;
     }
 
-/*Galeria*/
+    .navbar-active {
+        display: block;
+    }
+
+    .btn-nav {
+        border-color:grey;
+    }
+
+    .btn-nav:hover {
+        background-color: black;
+        border-color: grey;
+    }
+
+    .sectionIndex {
+        max-width: 85%;
+    }
+
+    .sectionIndex h1 {
+        padding: 10px 5px;
+    }
+
+    .contact_form{  
+        max-width: 85%;
+        padding-right: 10px;
+        box-shadow: 10px 10px 15px 15px #000000;
+    }
+
+    .imagenFondo{
+        min-height: 100vh;
+    }
     
-}
+    .imagenFondo h1 {
+        max-width: 100%;
+    }
+
+    input {
+        max-width: 95%; 
+        height: 35px; 
+    }
+
+    textarea {
+        max-width: 95%; 
+    }
+
+    .pie {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .pie a {
+        padding: 5px 10px;
+    }
+    
+    .fondo {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
+/*HistoriaMovil*/
+    .imagenHistoria {
+        background-image: url("../images/movil_Skyrim.png");
+    }
+
+    .sectionHistoria {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .tituloHistoria {
+        padding-bottom: 5px;
+    }
+
+    .tituloHistoria p {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .listaHistoria {
+        margin: 5px 5px 5px 20px;
+        padding: 5px;
+    }
+
+/*Cosmology*/
+    .imagenCosmology {
+        background-image: url("../images/movil_Fondo_grande_3.png");
+    }
+
+    .sectionCosmology {
+        margin: 15px;
+        padding: 15px;
+    }
+
+/*Soundtrack*/
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .wrapper {
+        grid-row: 2;
+    }
+
+    .iframe-youtube {
+        height: 35vh;
+    }
+
+/*The void*/
+    .fondoVacio {
+        background-image: url("../images/movil_The_void.png");
+    }
+
+/*Galería*/
+    .todasLasImagenes img {
+        width: 100%;
+    }
+}    

@@ -1,0 +1,49 @@
+.sectionCosmology {
+	max-width: 100%;
+	border-radius: 5px;
+	padding: 15px 15px 10px;
+	margin: 5px 15%;
+	color: $color_1;
+	background-color: $background-color_1;
+
+	@include mobile {
+		margin: 15px;
+		padding: 15px;
+	}
+
+	@include tablet {
+		border-radius: 20px;
+	}
+}
+
+.fondoVacio {
+	background-image: $imagen-vacio;
+	
+	h1 {
+		color: $color_1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		@include tablet {
+			margin: 10px;
+			padding: 0;
+		}
+	}
+
+	@include mobile {
+		background-image: url("../images/movil_The_void.png");
+	}
+
+	@include tablet {
+		background-image: url("../images/movil_The_void.png");
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		display: grid;
+		place-items: center;
+	}
+}

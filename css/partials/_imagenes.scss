@@ -1,0 +1,101 @@
+.fondo {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @include mobile {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+}
+
+.sectionGaleria {
+    width: 95%;
+    margin: 45px 5px 10px;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: $color_1;
+    background-color: $color-boton-hover;
+
+    h2 {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+    }
+}
+
+.mini_logo {
+    display: flex;
+    align-self: flex-start;
+}
+
+.mini_logo_2 {
+    display: flex;
+    align-self: flex-end;
+}
+
+.todasLasImagenes {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 5%;
+
+    img {
+        width: 30%;
+
+        @include mobile {
+            width: 100%;
+        }
+    }   
+}
+
+.scale {
+    transition: 1s;
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.imagenesSolar {
+    max-width: 100%;
+    height: auto;
+}
+
+.imagenHistoria {
+    background-image: $imagen-historia;
+    background-attachment: fixed;
+
+    @include mobile {
+        background-image: url("../images/movil_Skyrim.png");
+    }
+
+    @include tablet {
+        background-image: url("../images/tablet_Skyrim.png");
+    }
+}
+
+.imagenCosmology {
+  	background-image: $imagen-cosmology;
+
+    @include mobile {
+        background-image: url("../images/movil_Fondo_grande_3.png");
+    }
+}

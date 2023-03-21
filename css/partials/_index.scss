@@ -1,0 +1,63 @@
+.imagenFondo {
+    background-image: $imagen-fondo;
+    background-size:  auto auto;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    @include mobile {
+        min-height: 100vh;
+    }
+
+    h1 {
+        max-width: 800px;
+        padding: 5px;
+        margin: 0;
+        text-align: center;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        background-color: $color-fondo-titulo;
+        color:  $color-titulo;
+
+        @include mobile {
+            max-width: 100%;
+        }
+
+        @include tablet {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    }
+  
+    p {
+        text-align: justify;
+        padding: 5px 10px 5px;
+        margin: 5px;
+    }
+}
+
+.sectionIndex {
+    width: 800px;
+    margin-top: 45px;
+    border-radius: 10px;  
+    background-color: $color-fondo-claro;
+    color: $color-texto;
+
+    h1 {
+        @include mobile {
+            padding: 10px 5px;
+        }
+    }
+    
+    @include mobile {
+        max-width: 85%;
+    }
+
+    @include tablet {
+        margin-bottom: 45px;
+        border-radius: 20px;
+    }
+}
