@@ -7,35 +7,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  
+
     @include mobile {
         min-height: 100vh;
-    }
-
-    h1 {
-        max-width: 800px;
-        padding: 5px;
-        margin: 0;
-        text-align: center;
-        border-top-left-radius: 9px;
-        border-top-right-radius: 9px;
-        background-color: $color-fondo-titulo;
-        color:  $color-titulo;
-
-        @include mobile {
-            max-width: 100%;
-        }
-
-        @include tablet {
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-    }
-  
-    p {
-        text-align: justify;
-        padding: 5px 10px 5px;
-        margin: 5px;
     }
 }
 
@@ -43,15 +17,38 @@
     width: 800px;
     margin-top: 45px;
     border-radius: 10px;  
-    background-color: $color-fondo-claro;
-    color: $color-texto;
+    background-color: $color_transparente_2;
 
-    h1 {
+    h4 {
+        max-width: 90%;
+        padding: 5px;
+        margin: 0;
+        text-align: center;
+        border-radius: 10px;
+        background-color: $color_transparente_1;
+        color:  $color-titulo;
+        font-family: adobe-garamond-pro-1,adobe-garamond-pro-2,Georgia,Times New Roman,Times,serif;
+
         @include mobile {
+            max-width: 100%;
             padding: 10px 5px;
+        }
+
+        @include tablet {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
         }
     }
     
+    p {
+        text-align: justify;
+        padding: 5px 10px 5px;
+        margin: 5px;
+        border-radius: 10px;
+        background-color: $color_transparente_1;
+        color:  $color-1;
+    }
+
     @include mobile {
         max-width: 85%;
     }
@@ -59,5 +56,18 @@
     @include tablet {
         margin-bottom: 45px;
         border-radius: 20px;
+    }
+}
+
+.carousel-caption {
+    @include mobile {
+        display: block !important;
+        }
+    }
+    
+.container-fluid-i {
+    @include mobile {
+        width: auto;
+        margin: auto;
     }
 }

@@ -38,7 +38,7 @@ header {
     flex-direction: column;
 }
 
-.imagenFondo h1 {
+.imagenFondo h4 {
     max-width: 800px;
     padding: 5px;
     margin: 0;
@@ -107,7 +107,7 @@ label {
 }
   
 select {
-    background-color: rgb(230, 255, 255);;
+    background-color: rgb(230, 255, 255);
     border-radius: 5px;
     border-style: solid;
     margin: 10px 0 10px;
