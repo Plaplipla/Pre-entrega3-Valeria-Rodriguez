@@ -12,6 +12,19 @@ header {
     }
 }
 
+.navbar {
+    font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", Georgia, "Times New Roman", Times, serif;
+}
+
+.container-fluid {
+    @include mobile{
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+    }
+}
+
 .logo {
     width: 100px;
 
@@ -35,4 +48,26 @@ header {
 			border-color: $border-color_3;
 		}
     }
+}
+
+.navbarCos {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+.navbar-navCos {
+	.nav-itemCos {
+		&:not(:first-child) {
+			display: none;
+		}
+		&:first-child {
+			&:hover {
+				.dropdown-menu {
+					display: block;
+				}
+			}
+		}
+	}
 }

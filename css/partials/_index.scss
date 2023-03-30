@@ -14,13 +14,21 @@
 }
 
 .sectionIndex {
-    width: 800px;
+    max-width: 85%;
     margin-top: 45px;
     border-radius: 10px;  
     background-color: $color_transparente_2;
 
+    @include mobile {
+        max-width: 100%;
+    }
+    @include tablet {
+        margin-bottom: 45px;
+        border-radius: 20px;
+    }
+
     h4 {
-        max-width: 90%;
+        max-width: 100%;
         padding: 5px;
         margin: 0;
         text-align: center;
@@ -28,46 +36,33 @@
         background-color: $color_transparente_1;
         color:  $color-titulo;
         font-family: adobe-garamond-pro-1,adobe-garamond-pro-2,Georgia,Times New Roman,Times,serif;
+        font-size: 1.5rem;
 
         @include mobile {
             max-width: 100%;
             padding: 10px 5px;
+            font-size: 1.2rem;
         }
-
         @include tablet {
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+            border-radius: 20px;
+            font-size: 1.3rem;
         }
     }
     
     p {
         text-align: justify;
         padding: 5px 10px 5px;
-        margin: 5px;
-        border-radius: 10px;
+        margin: 10px;
+        border-radius: 15px;
         background-color: $color_transparente_1;
         color:  $color-1;
-    }
+        font-size: 1.1rem;
 
-    @include mobile {
-        max-width: 85%;
-    }
-
-    @include tablet {
-        margin-bottom: 45px;
-        border-radius: 20px;
-    }
-}
-
-.carousel-caption {
-    @include mobile {
-        display: block !important;
+        @include mobile {
+            font-size: 0.9rem;
         }
-    }
-    
-.container-fluid-i {
-    @include mobile {
-        width: auto;
-        margin: auto;
+        @include tablet {
+            font-size: 1.2rem;
+        }
     }
 }

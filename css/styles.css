@@ -27,6 +27,19 @@ header {
   }
 }
 
+.navbar {
+  font-family: adobe-garamond-pro-1,adobe-garamond-pro-2,Georgia,Times New Roman,Times,serif;
+}
+
+@media screen and (max-width: 576px) {
+  .container-fluid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+}
+
 .logo {
   width: 100px;
 }
@@ -52,6 +65,30 @@ header {
   }
 }
 
+.navbarCos {
+  font-family: adobe-garamond-pro-1,adobe-garamond-pro-2,Georgia,Times New Roman,Times,serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-navCos .nav-itemCos:not(:first-child) {
+  display: none;
+}
+
+.navbar-navCos .nav-itemCos:first-child:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
 .imagenFondo {
   background-image: url("../images/folk-pattern-black.png");
   background-size: auto auto;
@@ -68,7 +105,7 @@ header {
   }
 }
 .sectionIndex h4 {
-  max-width: 90%;
+  max-width: 100%;
   padding: 5px;
   margin: 0;
   text-align: center;
@@ -76,41 +113,39 @@ header {
   background-color: rgba(8, 55, 55, 0.931);
   color: rgb(230, 255, 255);
   font-family: adobe-garamond-pro-1,adobe-garamond-pro-2,Georgia,Times New Roman,Times,serif;
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 576px) {
   .sectionIndex h4 {
     max-width: 100%;
+    padding: 10px 5px;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 768px) {
   .sectionIndex h4 {
     border-radius: 20px;
+    font-size: 1.3rem;
   }
 }
 .sectionIndex p {
   text-align: justify;
   padding: 5px 10px 5px;
-  margin: 5px;
-  border-radius: 10px;
+  margin: 10px;
+  border-radius: 15px;
   background-color: rgba(8, 55, 55, 0.931);
   color: white;
-
+  font-size: 1.1rem;
 }
-
 .sectionIndex {
-  width: 800px;
+  max-width: 85%;
   margin-top: 45px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.412);
 }
 @media screen and (max-width: 576px) {
-  .sectionIndex h1 {
-    padding: 10px 5px;
-  }
-}
-@media screen and (max-width: 576px) {
   .sectionIndex {
-    max-width: 85%;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -119,46 +154,32 @@ header {
     border-radius: 20px;
   }
 }
-@media screen and (max-width: 567px) {
-  .carousel-caption {
-    display: block !important;
-  }
-}
-@media screen and (max-width: 567px){
-  .container-fluid-i {
-    width: auto;
-    margin: auto;
-  }
-}
-
 
 .mensaje {
   padding-top: 10px;
   text-align: center;
   font-family: adobe-garamond-pro-1,adobe-garamond-pro-2,Georgia,Times New Roman,Times,serif;
 }
-
 .contact_form {
-  width: 460px;
+  max-width: 500px;
   margin: 50px;
   border-radius: 10px;
   padding: 10px 25px;
   background-color: rgb(124, 195, 194);
   box-shadow: 10px 10px 20px 20px #000000;
 }
-@media screen and (max-width: 576px) {
-  .contact_form {
-    max-width: 95%;
-    padding-right: 10px;
-    box-shadow: 10px 10px 15px 15px #000000;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contact_form {
-    width: 85%;
-    margin-top: 45px;
-    border-radius: 20px;
-    padding: 20px 10px;
+  @media screen and (max-width: 768px) {
+    .contact_form {
+      max-width: 100%;
+      margin: 5px auto;
+      border-radius: 20px;
+    }
+  @media screen and (max-width: 576px) {
+    .contact_form {
+      max-width: 100%;
+      padding: 5px 15px;
+      box-shadow: 10px 10px 10px 10px #000000;
+    }
   }
 }
 
@@ -173,16 +194,15 @@ input {
   margin: 10px 0 20px;
   padding-left: 10px;
 }
-@media screen and (max-width: 576px) {
-  input {
-    max-width: 95%;
-    height: 35px;
-  }
-}
 @media screen and (max-width: 768px) {
   input {
-    width: 95%;
     margin: 10px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  input {
+    width: 100%;
+    height: 35px;
   }
 }
 
@@ -200,7 +220,8 @@ textarea {
 }
 @media screen and (max-width: 576px) {
   textarea {
-    max-width: 95%;
+    max-width: 100%;
+    height: 30vh;
   }
 }
 
@@ -245,7 +266,7 @@ select {
   max-width: 100%;
   border-radius: 5px;
   padding: 15px 15px 10px;
-  margin: 5px 15%;
+	margin: 80px 10% 0;
   color: white;
   background-color: #001621;
 }
