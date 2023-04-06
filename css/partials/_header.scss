@@ -6,7 +6,6 @@ header {
 
     @include mobile {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         padding: 10px;
     }
@@ -17,19 +16,25 @@ header {
 }
 
 .container-fluid {
-    @include mobile{
+    @include mobile {
         display: flex !important;
         flex-wrap: wrap !important;
         align-items: center !important;
+        justify-content: flex-start !important;
+    }
+    @include min-before {
         justify-content: flex-start !important;
     }
 }
 
 .logo {
     width: 100px;
+    padding: 5px;
 
     @include mobile {
-        height: 100%;
+        height: 50%;
+        max-width: 56px;
+        padding: 0;
     }
 }
 
@@ -56,18 +61,20 @@ header {
 	left: 0;
 	width: 100%;
 	z-index: 100;
+    @include min-before {
+        position: sticky;
+    }
+    @include mobile {
+        position: sticky;
+    }
 }
-.navbar-navCos {
-	.nav-itemCos {
-		&:not(:first-child) {
-			display: none;
-		}
-		&:first-child {
-			&:hover {
-				.dropdown-menu {
-					display: block;
-				}
-			}
+
+.dropdown-submenu {
+	&:hover {
+		.dropdown-menu {
+			display: block;
 		}
 	}
 }
+
+  
